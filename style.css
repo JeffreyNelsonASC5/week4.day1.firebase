@@ -1,0 +1,37 @@
+#navBar {
+    display: flex;
+    background-color: gray;
+    height: 10vh;
+    justify-content: space-between;
+
+}
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    
+    
+}
+#navTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    
+     
+}
+#barButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100px;
+    height: 70px;
+    
+}
+#submitButton{
+    width: 60px;
+    height: 20px;
+}

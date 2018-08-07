@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog and Dialogue</title>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDrxZ4wuBYEL56PpKGI7LyXp99c5Vxunsk",
+        authDomain: "blog-5b220.firebaseapp.com",
+        databaseURL: "https://blog-5b220.firebaseio.com",
+        projectId: "blog-5b220",
+        storageBucket: "blog-5b220.appspot.com",
+        messagingSenderId: "935052920196"
+      };
+      firebase.initializeApp(config);
+    </script>
+     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar">
+        <div id="image">                                   
+        <img  style="height: 50px;"src="https://www.shareicon.net/download/2016/11/09/851171_multimedia_512x512.png">
+        </div>
+        <div id="navTitle">                        
+        <h1>Blog N Dialogue</h1>
+        </div>
+        <div id="barButtons">
+        <button id="submitButton">Login</button><br>
+        <button id="submitButton">Signup</button>
+        </div>                                                              
+    </div>
+    <div id="main_container">
+        <div id="left_container">
+
+        </div>
+        <div id="right_container">
+            <div id="usernameBox" class="inputBoxes">
+                <label for="username">Username:</label>
+                <input id="username" type="text">
+            </div>
+            <div id="messageBox" class="inputBoxes">
+                <label for="message">Message:</label>
+                <input id="message" type="text">
+            </div>
+            <button id="Submit">Post</button>
+        </div>
+    </div>
+</body>
+</html>
