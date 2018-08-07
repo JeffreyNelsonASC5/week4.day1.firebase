@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Anton" rel="stylesheet">    
     <title>Blog and Dialogue</title>
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script>
@@ -30,24 +31,42 @@
         <h1>Blog N Dialogue</h1>
         </div>
         <div id="barButtons">
-        <button id="submitButton">Login</button><br>
-        <button id="submitButton">Signup</button>
+            <div id="loginBar">
+                <label for="loginInput1">Username:</label>
+                <input id="loginInput1" type="text">
+                <label for="loginInput2">Password:</label>
+                <input id="loginInput2" type="text">
+                <button id="Login" class="submitButton">Login</button><br>
+            </div>            
+            <div id="signupBar">
+                <label for="signupInput1">Username:</label>
+                <input id="signupInput1" type="text">
+                <label for="signupInput2">Password:</label>
+                <input id="signupInput2" type="text">
+                <button id="signup" class="submitButton">Signup</button>
+            </div>
         </div>                                                              
     </div>
     <div id="main_container">
         <div id="left_container">
-
+            
         </div>
         <div id="right_container">
-            <div id="usernameBox" class="inputBoxes">
-                <label for="username">Username:</label>
-                <input id="username" type="text">
+            <div id="main_container_of_usernamebox">
+                <div id="usernameBox" class="inputBoxes">
+                    <div class="rightButton">
+                    <label for="username">Username:</label>
+                    </div>
+                    <div calss="rightButton">
+                    <input id="username" type="text">
+                    </div>
+                </div>
+                <div id="messageBox" class="inputBoxes">
+                    <label for="message">Message:</label>
+                    <input id="message" type="text">
+                </div>
+                <button id="Submit">Post</button>
             </div>
-            <div id="messageBox" class="inputBoxes">
-                <label for="message">Message:</label>
-                <input id="message" type="text">
-            </div>
-            <button id="Submit">Post</button>
         </div>
     </div>
 </body>
